@@ -5,8 +5,10 @@ package champollion;
  *  Une Personne    , classe abstraite, sera spécifiée par des classes concrètes comme Étudiant ou Enseignant
  */
 public abstract class Personne {
-    private final String nom;
-    private final String email;
+    protected String nom;
+    protected String prenom;
+    protected String email;
+
 
     /**
      * Constructeur de la classe Personne.
@@ -16,6 +18,10 @@ public abstract class Personne {
     protected Personne(String nom, String email) {
         this.nom = nom;
         this.email = email;
+    }
+
+    public Personne() {
+
     }
 
     /**
